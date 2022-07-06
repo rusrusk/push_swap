@@ -6,7 +6,7 @@
 #    By: rkultaev <rkultaev@student.42wolfsburg.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/15 22:29:17 by rkultaev          #+#    #+#              #
-#    Updated: 2022/06/26 11:50:45 by rkultaev         ###   ########.fr        #
+#    Updated: 2022/07/06 11:35:36 by rkultaev         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS = sources/checker_parsing.c sources/utils.c sources/index.c \
 
 OBJ = $(SRCS:%.c=%.o)
 
-CC = gcc -g
+CC = gcc
 
 
 
@@ -43,7 +43,7 @@ clean :
 
 fclean : clean
 	rm -f $(NAME)
-	make clean -C libft_pushswap/
+	make fclean -C libft_pushswap/
 
 re : fclean all
 
